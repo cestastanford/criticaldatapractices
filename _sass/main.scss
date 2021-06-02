@@ -1,0 +1,89 @@
+
+
+a {
+	color: rgb(78, 162, 220);
+	cursor: pointer;
+}
+
+a:hover {
+	color: rgb(12, 127, 182);
+}
+
+.cdp-header {
+	color: rgb(229, 125, 96);
+}
+
+@media (min-width: 809px) {
+
+.home-page-w-logo {
+	min-height: 66vh;
+	width: 80%;
+	background-image: url('/assets/images/series_logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	position: relative;
+}
+}
+
+@media (max-width: 810px) and (min-width: 550px) {
+
+.home-page-w-logo {
+	min-height: 45vh;
+	width: auto;
+	background-image: url('/assets/images/series_logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	position: relative;
+}
+}
+
+@media (max-width: 549px) {
+
+.home-page-w-logo {
+	min-height: 33vh;
+	width: auto;
+	background-image: url('/assets/images/series_logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	position: relative;
+}
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+  		.home-page-w-logo {
+		min-height: 33vh;
+		width: auto;
+		background-image: url('/assets/images/series_logo.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		position: relative;
+}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+  		.home-page-w-logo {
+		min-height: 20vh;
+		width: auto;
+		background-image: url('/assets/images/series_logo.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		position: relative;
+}
+}
+
+.past-talk {
+	background: #dee2e6;
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ page.title }}</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+	{% include navigation.html %}
+	<main>
+		{% if page.url == '/' %}
+		<div class="py-5">
+			<div class= "container-fluid home-page-w-logo">
+			</div>
+			<div class="container-fluid text-center pt-3">
+				<h5><em>A Workshop at the Stanford Humanities Center</em></h5>
+				<h1>Critical Data Practices in Humanities Research</h1>
+			</div>
+			{% endif %}
+			<!--<div class="container text-center my-5"><h1>{{ page.title }}</h1></div>-->
+			<div class="row">
+				<div class="col"></div>
+				<div class="col-6 my-5">{{ content }}</div>
+				<div class="col"></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<a href="https://shc.stanford.edu"><img src="/assets/images/shc.png" height="150px" class="float-end"></a>
+				</div>
+				<div class="col text-center">
+					<a href="https://cesta.stanford.edu/"><img src="/assets/images/cesta.jpg" height="150px" class="float-start"></a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
